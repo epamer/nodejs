@@ -1,0 +1,41 @@
+- major
+- minor
+- patch
+
+^ - caret
+~ tilde
+
+"^3.1.6" === "3.x"
+"~2.7.4" === "2.7.x"
+"5.3.2" === "5.3.2"
+
+npm list
+npm list --depth=0
+
+// init
+npm init --yes   will apply all defautl values
+
+// view
+npm view mangoose
+npm view mangoose versions
+npm view mangoose dependencies
+
+// install certain version
+npm i mangoose@2.3.4
+
+// updating
+npm outdated
+npm -g outdated    for globally installed packages
+npm update
+
+npm i -g npm-check-updates
+ncu -u     - updates dependencies in the package.json with newest versions
+
+// uninstall
+npm uninstall mangoose === npm un mangoose
+
+// publish
+npm login  --- login to the npm
+npm publish  --- publish npm package
+npm version major or minor/patch  --- update npm package version
+npm publish  --- will publish new version of package if it exists
